@@ -1,0 +1,28 @@
+@import "assets/styles/app";
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-block: 1rem;
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #a3a3a37a;
+  margin-bottom: 1rem;
+  h1 {
+    margin-block: 0 1rem;
+  }
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 0.8rem;
+  }
+}

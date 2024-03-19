@@ -1,0 +1,19 @@
+article {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: var(--background-200);
+  .image-wrapper {
+    width: 100%;
+    img {
+      width: 100%;
+      aspect-ratio: 16/17;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 1rem;
+    padding-top: 0.4rem;
+    box-sizing: border-box;
+  }
+}

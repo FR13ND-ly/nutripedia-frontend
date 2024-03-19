@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-block: 0;
+}
+
+mat-form-field {
+  width: 100%;
+}

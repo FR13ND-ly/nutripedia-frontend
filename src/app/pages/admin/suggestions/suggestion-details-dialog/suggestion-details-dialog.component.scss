@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 30rem;
+}
+
+.main {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+h2 {
+  margin-block: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+section {
+  margin-block: 1rem;
+}
+
+.c {
+  display: flex;
+  gap: 1rem;
+}

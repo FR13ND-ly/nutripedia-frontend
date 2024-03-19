@@ -1,0 +1,8 @@
+@if (vs$ | async; as vs) {
+<div>
+  <product-ratings [vs]="vs" />
+  <product-info [vs]="vs" />
+</div>
+<product-similar />
+<product-comments [vs]="vs" />
+}

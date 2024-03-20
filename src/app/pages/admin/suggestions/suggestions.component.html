@@ -20,5 +20,7 @@
   </article>
   @if (!$last) {
   <div class="divider"></div>
-  } }
+  } } @empty {
+  <p class="empty">No suggestions to show.</p>
+  }
 </div>

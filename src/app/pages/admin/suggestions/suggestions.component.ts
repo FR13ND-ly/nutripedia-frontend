@@ -23,9 +23,12 @@ export class SuggestionsComponent {
   suggestions$: Observable<any> = this.suggestionsService.getWaiting();
 
   onSeeDetails(suggestion: any) {
-    this.dialog.open(SuggestionDetailsDialogComponent, {
+    let d = this.dialog.open(SuggestionDetailsDialogComponent, {
       data: suggestion,
     });
+    d.afterClosed().subscribe(
+      () => (this.suggestions$ = this.suggestionsService.getWaiting())
+    );
   }
 
   onDelete(suggestion: any, suggestions: any, index: any) {

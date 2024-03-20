@@ -2,7 +2,9 @@ article {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  background-color: var(--background-200);
+  background-color: var(--primary-100);
+  border-radius: 0.3rem;
+  overflow: hidden;
   .image-wrapper {
     width: 100%;
     img {

@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  margin-right: 2rem;
-  margin-top: 6rem;
+  margin-right: 1rem;
 }
 
 span {
-  font-size: 62px;
+  font-size: 42px;
   cursor: pointer;
 }
 
@@ -30,6 +29,7 @@ span {
 }
 
 .down {
+  margin-top: -1.2rem;
   transition: 0.2s;
   &:hover {
     color: rgb(255, 162, 162);
@@ -43,7 +43,7 @@ span {
 }
 
 .count {
-  font-size: 2rem;
-  margin-left: 1rem;
-  transform: translateY(-0.3rem);
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+  transform: translateY(-0.2rem);
 }

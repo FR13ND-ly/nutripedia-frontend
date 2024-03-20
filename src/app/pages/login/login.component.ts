@@ -33,9 +33,15 @@ export class LoginComponent {
       password: this.loginForm.value.password,
     };
     this.store.dispatch(setLoading({ state: true }));
-    this.userService.signIn(data).subscribe(() => {
-      this.router.navigate(['home']);
-      this.store.dispatch(setLoading({ state: false }));
-    });
+    this.userService.signIn(data).subscribe(
+      () => {
+        this.router.navigate(['home']);
+        this.store.dispatch(setLoading({ state: false }));
+      },
+      () => {
+        this.store.dispatch(setLoading({ state: false }));
+        this.snackbar.open('Login or password wrong', '', { duration: 3000 });
+      }
+    );
   }
 }

@@ -1,9 +1,7 @@
 <header>
-  <mat-progress-bar
-    mode="indeterminate"
-    *ngIf="loading$ | async"
-  ></mat-progress-bar>
-  <span class="logo" routerLink="/home">HealthPedia</span>
+  <div class="logo" routerLink="/home">
+    <img src="/assets/logo.png" /><span>NutriPedia</span>
+  </div>
   <section class="searchbox-wrapper"></section>
   <section class="nav">
     <button mat-button routerLink="/home/blog">

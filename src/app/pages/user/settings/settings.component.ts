@@ -59,7 +59,7 @@ export class SettingsComponent {
         })
       )
       .subscribe((res) => {
-        this.snackbar.open('Suggestion modified', '', { duration: 3000 });
+        this.snackbar.open('Profile image modified', '', { duration: 3000 });
         user.imageUrl = res;
       });
   }

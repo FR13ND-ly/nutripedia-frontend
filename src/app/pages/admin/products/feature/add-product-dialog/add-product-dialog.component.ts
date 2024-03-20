@@ -53,7 +53,7 @@ export class AddProductDialogComponent {
       weight: product.quantity,
       nutriments: this.getNutriments(product.nutriments),
       allergens: product.allergens_tags.map((item: any) =>
-        item.replace(/en:/g, '')
+        item.replace(/[^:]*:/g, '')
       ),
       categories: product.categories_tags.map((item: any) =>
         item.replace(/[^:]*:/g, '')

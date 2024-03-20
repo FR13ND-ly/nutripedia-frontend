@@ -10,12 +10,13 @@ export const adminGuard: CanActivateFn = (route, state) => {
 
   let user$ = store.select(selectUser);
   return user$.pipe(
-    filter((res) => res!?.init !== false),
     map((res: any) => {
       if (res?.user.isAdmin) {
         return true;
       } else {
-        router.navigate(['home']);
+        if (res?.user) router.navigate(['home']);
+        else router.navigate(['login']);
+
         return false;
       }
     })

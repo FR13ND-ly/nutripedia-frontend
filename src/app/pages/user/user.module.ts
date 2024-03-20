@@ -16,11 +16,31 @@ import { ChatComponent } from './chat/chat.component';
         component: UserComponent,
         children: [
           { path: '', redirectTo: 'products', pathMatch: 'full' },
-          { path: 'settings', component: SettingsComponent },
-          { path: 'suggestions', component: SuggestionsComponent },
-          { path: 'notifications', component: NotificationsComponent },
-          { path: 'products', component: ProductsComponent },
-          { path: 'assistent', component: ChatComponent },
+          {
+            path: 'settings',
+            component: SettingsComponent,
+            title: 'User Settings | Nutripedia',
+          },
+          {
+            path: 'suggestions',
+            component: SuggestionsComponent,
+            title: 'User Suggestions | Nutripedia',
+          },
+          {
+            path: 'notifications',
+            component: NotificationsComponent,
+            title: 'User Notifications | Nutripedia',
+          },
+          {
+            path: 'products',
+            component: ProductsComponent,
+            title: 'User Products | Nutripedia',
+          },
+          {
+            path: 'assistent',
+            component: ChatComponent,
+            title: 'AI Chat | Nutripedia',
+          },
         ],
       },
     ]),

@@ -10,18 +10,21 @@ export const routes: Routes = [
       import('./pages/landing-page/landing-page.module').then(
         (m) => m.LandingPageModule
       ),
+    title: 'NutriPedia',
   },
   {
     path: 'register',
     loadChildren: () =>
       import('./pages/register/register.module').then((m) => m.RegisterModule),
     canActivate: [logoutGuard],
+    title: 'Register | NutriPedia',
   },
   {
     path: 'login',
     loadChildren: () =>
       import('./pages/login/login.module').then((m) => m.LoginModule),
     canActivate: [logoutGuard],
+    title: 'Login | NutriPedia',
   },
   {
     path: 'home',

@@ -1,0 +1,63 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+}
+
+.logo {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  width: fit-content;
+  padding: 2rem;
+  box-sizing: border-box;
+  top: 25%;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.02);
+  border-radius: 1rem;
+  backdrop-filter: blur(0.5rem);
+  user-select: none;
+  color: #fff;
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+.mark {
+  background: -webkit-linear-gradient(right, rgb(58, 58, 253), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline {
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 6px;
+    background-color: purple;
+    left: 0;
+    z-index: -1;
+  }
+}

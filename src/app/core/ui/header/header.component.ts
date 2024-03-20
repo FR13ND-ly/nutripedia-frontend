@@ -9,7 +9,6 @@ import { Observable, map, switchMap, tap } from 'rxjs';
 import { RouterLink } from '@angular/router';
 import { userActions } from '../../../store/user/user.actions';
 import { BlogService } from '../../data-access/blog.service';
-import { selectLoadingState } from '../../../store/loading/loading.reducer';
 
 @Component({
   selector: 'app-header',
@@ -26,8 +25,6 @@ export class HeaderComponent {
 
   theme$ = this.themeService.theme$;
   user$ = this.store.select(selectUser).pipe(map((el: any) => el.user));
-
-  loading$ = this.store.select(selectLoadingState).pipe(tap(console.log));
 
   notifications$: Observable<any> = this.user$.pipe(
     switchMap((user: any) => this.blogService.getNotificationsLast(user.id))

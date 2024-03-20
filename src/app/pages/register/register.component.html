@@ -1,3 +1,5 @@
+<img src="/assets/bg.jpg" class="bg" />
+
 @if (nextStep()) {
 <next-step [userId]="user.id" />
 } @else {
@@ -20,5 +22,6 @@
   >
     Continue
   </button>
+  <a class="new" routerLink="/login">Already have an account?</a>
 </form>
 }

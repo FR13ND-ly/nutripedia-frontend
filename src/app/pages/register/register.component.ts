@@ -9,6 +9,7 @@ import {
 } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NextStepComponent } from './feature/next-step/next-step.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -19,6 +20,7 @@ import { NextStepComponent } from './feature/next-step/next-step.component';
     ReactiveFormsModule,
     RegisterComponent,
     NextStepComponent,
+    RouterLink,
   ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',

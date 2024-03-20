@@ -47,6 +47,7 @@ export class UserService {
       tap((user: any) => {
         if (!user.logged) return;
         localStorage.setItem('token', user.token);
+        this.store.dispatch(userActions.loginSuccess({ user: user }));
       })
     );
   }

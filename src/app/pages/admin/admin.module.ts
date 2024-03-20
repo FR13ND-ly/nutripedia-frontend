@@ -13,8 +13,16 @@ import { SuggestionsComponent } from './suggestions/suggestions.component';
         component: AdminComponent,
         children: [
           { path: '', redirectTo: 'products', pathMatch: 'full' },
-          { path: 'products', component: ProductsComponent },
-          { path: 'suggestions', component: SuggestionsComponent },
+          {
+            path: 'products',
+            component: ProductsComponent,
+            title: 'Admin Products | Nutripedia',
+          },
+          {
+            path: 'suggestions',
+            component: SuggestionsComponent,
+            title: 'Admin Suggestions | Nutripedia',
+          },
         ],
       },
     ]),

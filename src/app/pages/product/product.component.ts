@@ -4,7 +4,7 @@ import { ProductService } from '../../core/data-access/product.service';
 import { Observable, combineLatest, map, switchMap, tap } from 'rxjs';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { InfoComponent } from './feature/info/info.component';
-import { CommentsComponent } from './ui/comments/comments.component';
+import { CommentsComponent } from './feature/comments/comments.component';
 import { RatingsComponent } from './feature/ratings/ratings.component';
 import { Store } from '@ngrx/store';
 import { selectUser } from '../../store/user/user.reducer';

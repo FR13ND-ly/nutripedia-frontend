@@ -1,7 +1,7 @@
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { Component, Input, OnInit, inject } from '@angular/core';
-import { AddCommentComponent } from '../add-comment/add-comment.component';
-import { CommentComponent } from '../../feature/comment/comment.component';
+import { AddCommentComponent } from '../../ui/add-comment/add-comment.component';
+import { CommentComponent } from '../../ui/comment/comment.component';
 import { ProductService } from '../../../../core/data-access/product.service';
 import { Observable } from 'rxjs';
 
